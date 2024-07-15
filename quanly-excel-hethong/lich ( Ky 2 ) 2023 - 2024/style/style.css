@@ -1,0 +1,243 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+/* style login */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f5f5f5;
+}
+.login__container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 33px;
+  background:lightgreen ;
+
+}
+.login__container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.login__container form label {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.login__container form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.login__container form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: darkolivegreen;
+  color: aqua;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.login__container form button:hover {
+  background: green;
+}
+.login__container form a {
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+}
+.login__container form a:hover {
+  color: #555;
+}
+.login__registerButton {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: block;
+}
+/* style signup */
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f5f5f5;
+}
+.signup__container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 33px;
+  background: lightgreen;
+}
+
+
+.signup__container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.signup__container form label {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+
+}
+.signup__container form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+}
+.signup__container form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background:darkolivegreen;
+  color: aqua;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.signup__container form button:hover {
+  background: green;
+}
+.signup__container form a {
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+}
+.signup__container form a:hover {
+  color: #555;
+}
+.signup__registerButton {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: block;
+}
+
+.ID1{
+background-color: blue;
+width: 938px;
+border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10 px;
+  break-inside: avoid-column;
+  margin-top: 0.8px;
+    margin-left: -48.8px;
+  height: 788px;
+  }
+
+.marquee{
+background-color: aquamarine;
+height: 38.8px;
+width: 935px;
+font-size: 33px;
+text-align: center;
+color: seagreen;
+scrollamount:88;
+  }
+
+
+  *{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+    }
+    .content{
+      width: 403px;
+      height: 433px;
+      margin-left: -20px;
+      margin-top: -22px;
+      margin-bottom: -22px;
+      margin-right: -28px;
+ padding: 13px;
+  border-radius: 5px;
+  border: 1px solid black;
+   position: relative;
+   overflow: hidden;
+   padding: 3.8px;
+    }
+    .content::before{
+     content: "";
+    width: 180%;
+    height: 50%;
+    position: absolute;
+    background-image: linear-gradient(to right,blue,orangered);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    animation: tbay 3s infinite linear;
+      }
+
+.signup__container form {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+    flex-direction: column;
+    position: relative;
+    background: lightgreen;
+    width: 100%;
+    height: 100%;
+    padding: 13px;
+}
+.login__container form {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+    flex-direction: column;
+    position: relative;
+    background: lightgreen;
+    width: 100%;
+    height: 100%;
+    padding: 13px;
+}
+
+      @keyframes tbay {
+        0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100%{
+  transform: translate(-50%, -50%) rotate(360deg);
+          }
+        }
+
+
+

@@ -1,0 +1,223 @@
+*{
+padding: 0;
+margin: 0;
+	}
+	a{
+	text-decoration: none;
+	}
+	#wapper{
+
+		display: flex;
+		justify-content: center;	
+	}
+	.btn{
+		margin-top:38px;
+		padding: 15px 25px;
+		border: 0.38px solid darkolivegreen;
+		display: inline-block;
+		text-transform: uppercase;
+		color: green;
+		font-weight: bold;
+		position: relative;
+		overflow: hidden;
+		width: 488px;
+		text-align: center;
+		font-size: 38px;
+		height: 83px;
+		border-radius: 3.8px;
+	}
+	.btn::before{
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					background: darkgreen;
+					left: -100%;
+					top:0;
+					transition: all 1.38s ease-in-out;
+					z-index: -1;
+				}
+				.btn:hover::before{
+					left: 0;
+
+				}
+				.btn span{
+					z-index: 10;
+				}
+				.btn:hover span{
+						transition: all 1.38s ease-in-out;
+						color: yellow;
+				}
+				.Congthongtin{
+					border: 1px solid black;
+					padding: center;
+				}
+				hr{
+					
+				
+    			height: 3px;
+    			background: blueviolet;
+				}
+				font{
+						text-align: center;
+						font-weight: bold;
+						font-family: Arial;
+						color: lightseagreen;
+						text-transform: uppercase;
+					}
+					.btn1{
+		padding: 15px 25px;
+		border: 0.08px solid darkolivegreen;
+		display: inline-block;
+		text-transform: uppercase;
+		color: green;
+		font-weight: bold;
+		position: relative;
+		overflow: hidden;
+		width: 133px;
+		text-align: center;
+		font-size: 18px;
+		height: 53px;
+		border-radius: 18px;
+		margin-left:2.8px;
+	}
+	.btn1::before{
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+				
+					left: -100%;
+					top:0;
+					transition: all 1.3s ease-in-out;
+					z-index: -1;
+				}
+				.btn1:hover::before{
+					left: 0;
+
+				}
+				.btn1 span{
+					z-index: 10;
+				}
+				.btn1:hover span{
+						transition: all 0.88s ease-in-out;
+						color: yellow;
+				}
+
+	.btn2{
+		padding: 15px 25px;
+		border: 0.08px solid darkolivegreen;
+		display: inline-block;
+		text-transform: uppercase;
+		color: green;
+		font-weight: bold;
+		position: relative;
+		overflow: hidden;
+		width: 133px;
+		text-align: center;
+		font-size: 18px;
+		height: 53px;
+		border-radius: 18px;
+		margin-left:2.8px;
+	}
+	.btn2::before{
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+				
+					left: -100%;
+					top:0;
+					transition: all 1.3s ease-in-out;
+					z-index: -1;
+				}
+				.btn2:hover::before{
+					left: 0;
+
+				}
+				.btn2 span{
+					z-index: 10;
+				}
+				.btn2:hover span{
+						transition: all 0.88s ease-in-out;
+						color: yellow;
+				}
+
+				.btn3{
+		padding: 15px 25px;
+		border: 0.08px solid darkolivegreen;
+		display: inline-block;
+		text-transform: uppercase;
+		color: green;
+		font-weight: bold;
+		position: relative;
+		overflow: hidden;
+		width: 133px;
+		text-align: center;
+		font-size: 18px;
+		height: 53px;
+		border-radius: 18px;
+		margin-left:2.8px;
+	}
+	.btn3::before{
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+				
+					left: -100%;
+					top:0;
+					transition: all 1.3s ease-in-out;
+					z-index: -1;
+				}
+				.btn3:hover::before{
+					left: 0;
+
+				}
+				.btn3 span{
+					z-index: 10;
+				}
+				.btn3:hover span{
+						transition: all 0.88s ease-in-out;
+						color: yellow;
+				}
+				
+				.btn4{
+		padding: 15px 25px;
+		border: 0.08px solid darkolivegreen;
+		display: inline-block;
+		text-transform: uppercase;
+		color: green;
+		font-weight: bold;
+		position: relative;
+		overflow: hidden;
+		width: 133px;
+		text-align: center;
+		font-size: 18px;
+		height: 53px;
+		border-radius: 18px;
+		margin-left:2.8px;
+	}
+	.btn4::before{
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+				
+					left: -100%;
+					top:0;
+					transition: all 1.3s ease-in-out;
+					z-index: -1;
+				}
+				.btn4:hover::before{
+					left: 0;
+
+				}
+				.btn4 span{
+					z-index: 10;
+				}
+				.btn4:hover span{
+						transition: all 0.88s ease-in-out;
+						color: yellow;
+				}
+				

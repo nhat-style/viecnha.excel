@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/app1.js"></script>
+    <link rel="stylesheet" href="style/main3.css">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body style="width: 1388px;">
+    <div  style="background-image: url(../quanly/hinhExcel.jpg);background-repeat: no-repeat;height:88px;width:1388px;border: 1px solid green;" >
+<a href="./Congthongtin.html"><img src="../quanly/hinhExcel.jpg" ></a>
+ </div>
+ <h1 style="color:white;">&#160;</h1>
+<ul style="margin-left:573.8px">
+    <li class="Dropdown" >
+      <!---ghi muc chinh-->
+      <a class="Dropbtn" style="height: 10.8px;margin-top: -8px;">Kỳ 2 niên khóa 2023 - 2024</a>  <i class="icon-menu fas fa-chevron-down" style="margin-left: 18.88px;"></i>
+        <div class="Dropdown-content">
+            <!---ghi muc phu-->
+             <a href="Thanhtich.html" >Chọn kỳ làm</a>
+             <a href="thanhtich_ky1_nienkhoa2022-2023.html">Kỳ 1 niên khóa 2022 - 2023 </a>
+           <a href="thanhtich_ky2_nienkhoa2022-2023.html" >Kỳ 2 niên khóa 2022 - 2023</a>
+            <a href="thanhtich_ky1_nienkhoa2023-2024.html" >Kỳ 1 niên khóa 2023 - 2024</a>          
+            <a href="thanhtich_ky2_nienkhoa2023-2024.html" >Kỳ 2 niên khóa 2023 - 2024</a>
+  <!-- <a href="thanhtich_ky1_nienkhoa2024-2025.html" >Kỳ 1 niên khóa 2024 - 2025</a>
+   <a href="thanhtich_ky2_nienkhoa2024-2025.html" >Kỳ 2 niên khóa 2024 - 2025</a>
+    <a href="thanhtich_ky1_nienkhoa2025-2026.html" >Kỳ 1 niên khóa 2025 - 2026</a>
+     <a href="thanhtich_ky2_nienkhoa2025-2026.html" >Kỳ 2 niên khóa 2025 - 2026</a>
+            -->
+    </div>
+    </li>
+ </ul>    
+<!--<font style="margin-left:473.88px;font-size: 38.88px;font-family: 'Arial';">Chưa có dữ liệu hiển thị !</font>--> 
+<script>
+    window.onload = function () {
+
+Highcharts.chart('container', {
+    colors:['#FF5C21','#66FF00','#FFD700',],
+    animationEnabled: true,
+        chart: {
+        zoomType: 'xy',
+        backgroundColor:'whitesmoke',
+    },
+   
+    yAxis: [{ // Primary yAxis
+       max: 10.0,
+       min:0, 
+        labels: {
+
+            format: '{value}',
+           
+            style: {
+                color: Highcharts.getOptions().colors[1]
+            }
+        },
+        title: {
+              text: 'TB làm kỳ và TB chung cả năm',
+            style: {
+                color: Highcharts.getOptions().colors[1]
+            }
+        }
+    }, { // Secondary yAxis
+        title: {
+            text: 'TB khóa làm phần',
+            style: {
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        labels: {
+            format: ' ',
+            style: {
+                color: Highcharts.getOptions().colors[0]
+            }
+        },
+        opposite: true
+    }],
+    tooltip: {
+        shared: true
+    },
+
+    legend: {
+        align: 'center',
+        x: 78.8,
+        verticalAlign: 'center',
+         y: 703.8,
+        floating: true,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor ||  //theme
+            'rgb(0,0,0,0)' 
+    },
+     title: {
+        text: 'Tổng kết niên khóa 2023 - 2024',//ghi du lieu
+        align: 'center'//chinh
+    },
+    subtitle: {
+        text: 'Kỳ 2',//ghi du lieu
+        align: 'center'//chinh
+    },
+     xAxis: [{
+       categories: [ 'Cấu Trúc Ngôi Nhà','Kỹ Thuật Lau Dọn Cơ Bản','Phần Mềm','Trắc Nghiệm Chuyên Ngành Tin Học',],//ghi du lieu
+        crosshair: true
+    }],
+    series: [{
+         name: 'Trung bình làm kỳ',//ghi du lieu
+        type: 'column',//chinh
+         yAxis: 0,
+        data: [//ghi du lieu
+             ['Cấu Trúc Ngôi Nhà', 6.6],
+              ['Kỹ Thuật Lau Dọn Cơ Bản', 6.0],
+          ['Phần Mềm', 7.4],
+      ['Trắc Nghiệm Chuyên Ngành Tin Học',8.4 ],
+        ],
+       
+    
+        dataLabels: {
+            enabled: true,
+            format: '{point.y:,0,f}',//chinh
+            color:'black',//chinh
+        },
+        tooltip: {
+            valueSuffix: ' điểm',//ghi don vi
+           backgroundColor:'red',
+                     }
+
+}, 
+{
+       name: 'Trung bình chung cả năm',//ghi du lieu
+        type: 'column',//chinh 
+        yAxis: 0,
+        data: [//ghi du lieu
+              ['Cấu Trúc Ngôi Nhà', 6.4],
+              ['Kỹ Thuật Lau Dọn Cơ Bản', 6.3],
+           ['Phần Mềm', 7.4],
+    ['Trắc Nghiệm Chuyên Ngành Tin Học',7.8 ],
+        ],
+         dataLabels: {
+            enabled: true,
+            format: '{point.y:,0,f}',//chinh
+            color:'black',
+        },
+         tooltip: {
+            valueSuffix: ' điểm'//ghi don vi
+                     }
+                 },
+
+                 {
+                  name: 'Trung bình khóa làm phần',//ghi du lieu
+        type: 'spline',//chinh
+        yAxis: 0,
+        data: [//ghi du lieu
+              ['Cấu Trúc Ngôi Nhà', 4.6],
+              ['Kỹ Thuật Lau Dọn Cơ Bản', 4.8],
+            ['Phần Mềm', 4.7],
+['Trắc Nghiệm Chuyên Ngành Tin Học',5.3 ],
+        ],
+         tooltip: {
+            valueSuffix: ' điểm'//ghi don vi
+            }
+    }],
+});
+}
+</script>
+<br>
+
+</head>
+<body>
+<div id="container" style="height: 738px; width: 1388px;"></div>
+<script src="https://code.highcharts.com/highcharts.js"> </script>
+</body>
+</html>

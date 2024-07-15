@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lịch kỳ 1 niên khóa 2022 - 2023</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="style/tb.css">
+  <title></title>
+</head>
+<body>
+  <script>
+var li=$('tb.html').find('li')
+if(li.length){
+  $('a.status-message>.icon').attr('data-icon-label',li.length)
+}
+</script>
+<a class="status-message modal--open" role="button" href="tb.html" title="Thông báo">
+  <div class="icon" data-icon-label="0">
+    <svg width="24px" height="24px" viewBox="0 0 24 24"><path fill="#707070" d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21"></path></svg>
+  </div>
+</a>
+
+  <b:attr name='class' value='modal--target modal--html'/>
+  <b:attr name='data-version' value=''/>
+  <div class='modal--confirm'>
+    <div class='modal--dialog'>
+      <div class='_3em'/>
+      <div class='modal--content'>
+        <div class='modal--header'>
+          <div class='_mht'>Thông báo</div>
+          <div class='_mhc modal--icon modal--close'/>
+        </div>
+        <div class='modal--body'>
+          <div><data:content/></div>
+        </div>
+        <div class='modal--footer'><button class='primary modal--close' type='button' >Đóng</button></div>
+      </div>
+      <div class='_3em'/>
+    </div>
+  </div>
+  <ul><li>Thông báo 1</li><li>Thông báo 2</li><li>Thông báo 3</li><li>Thông báo 3</li></ul>
+  <p>Hiện chưa có thông báo mới</p>
+</body>
+</html>
